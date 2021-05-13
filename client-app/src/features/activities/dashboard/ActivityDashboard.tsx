@@ -1,4 +1,3 @@
-
 import { observer } from 'mobx-react-lite'
 import { useEffect } from 'react'
 import { Grid } from 'semantic-ui-react'

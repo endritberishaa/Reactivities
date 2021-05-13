@@ -13,7 +13,7 @@ namespace Application.Activities
             public Activity Activity { get; set; }
         }
 
-        public class Handler : IRequestHandler<Command>
+    public class Handler : IRequestHandler<Command>
         {
             private readonly DataContext _context;
             public Handler(DataContext context)
@@ -21,7 +21,9 @@ namespace Application.Activities
                 _context = context;
             }
 
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+    
+    
+        public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
                 _context.Activities.Add(request.Activity);
 

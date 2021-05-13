@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Extensions;
-using Application.Activities;
-using Application.Core;
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -19,7 +16,7 @@ using Microsoft.OpenApi.Models;
 using Persistence;
 
 namespace API
-{
+{ 
     public class Startup
     {
 
